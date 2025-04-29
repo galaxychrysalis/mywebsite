@@ -1,0 +1,118 @@
+
+/* display  option shows us how to utilize the space between elements */
+
+/* inline : takes only the place required by the the element..no margin no padding....displays in one line */
+
+/* block: takes full space available in width */
+
+/* inline-block: similar to inline but applies properties like margin and padding  */
+
+/* none: removes the element completely...replaced by another element.. */
+
+/* flex: displays in either rows or columns. */
+
+/* grid: similar to flex but allows us to create a grid layout */
+
+
+
+  
+
+div {
+  background-color: lavender;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+ border:2px solid black;
+  }
+
+#boxone{
+  position: relative;
+  z-index: 1;
+ 
+}
+/* background-image and background-size */
+/* background-size:cover/contain/auto */
+
+/* cover: scales the image to be as large as possible so that the background area is completely covered by the background image. The image will be clipped to fit. */
+
+/* contain: scales the image to be as large as possible so that both its width and height can fit inside the content area. The image will not be clipped to fit. */
+
+/* auto: the background image is not resized. The image will be shown in its original size. If the image is larger than the element, it will overflow. */
+#boxtwo{
+  background-image: url("lights_photo.jpg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: sticky;
+  height: 500px;
+  width: 320px;
+  font-size: 50px;
+  top: 0px;
+  left: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid black;
+}
+/* fixed:moves along with the page */
+#boxthree{ position:fixed;
+  top:0px;
+ 
+ }
+ /* sticky: moves according to the scroll */
+
+ /* z-index: adds layers to move object behind or front of another object(overlap or underlap) */
+#boxfour{
+  background-color: green;
+  position: static;
+  
+  z-index: -1;
+  }
+
+
+p {
+  
+  color: black;
+  font-style: italic;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 8000px;
+}
+  
+/* get photos free on unsplash */
+ /* visibilty: hidden ...the element hidden is not replaced by another. */
+
+ /* alpha channel: RGBA..A: alpha */
+ /* ALPHA represents opacity */
+ /* 0 is transparent..and 1 is true colour */
+
+/* RELATIVE UNITS */
+/* relative units like percentage ,etc depend on the parent tag.
+for eg: the size  div inside a div would depend on the parent div(later),if size is mentioned in percentage.  */
+
+/* absolute units like px,cm,mm,pt, etc are fixed and do not depend on the parent tag. */
+
+/* REM(root em): relative to the root element */
+ /* EM: relative to the parent element */
+ /* EX: relative to the x-height of the font */
+ /* CH: relative to the width of the "0" character in the element's font */
+ /* VW: 1% of the viewport width */
+ /* VH: 1% of the viewport height */
+ /* VMIN: 1% of the viewport's smaller dimension */
+ /* VMAX: 1% of the viewport's larger dimension */
+ 
+/* PERCENTAGE: relative to the parent element */
+
+/* POSITION property */
+
+/* static: default value.  */
+
+/* relative: positioned relative to its normal position. top, left, right, bottom properties will offset the element from its normal position. */
+
+/* absolute: positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport like fixed). If no such ancestor exists, it is positioned relative to the initial containing block. */
+
+/* fixed: positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. */
+
+/* sticky: toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like fixed). */

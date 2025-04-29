@@ -1,0 +1,61 @@
+/* This is a comment in CSS */
+/* we basically have three ways to style html codes: 1. inline(inside html tags itself)
+       2. <style> using style tags</style>
+       3. creating an external stylesheet */
+
+
+       /* inline has most priority  */
+
+/* <style> has more priority than external stylesheet */
+/* id selector */
+
+
+
+#headingone {
+       color: blue;
+}
+#headingtwo{
+       color: green;
+}
+/* class selector */
+.headingthree{
+       color: magenta;
+}
+/* element selector */
+h2{
+       color: lightseagreen;
+}
+
+
+button{
+       color: rgb(255, 0, 0);
+       background-color: black;
+}
+
+body{
+       background-color: aqua;
+       font-family: 'Courier New', Courier, monospace;
+       font-size: medium;
+       text-align: center;
+       font-weight: bolder;
+}
+#box{
+       color : white;
+       background-color: blue;
+       font-size: 20px;
+}
+#letter{
+       color: white;
+       background-color: black;
+       font-size: 10px;
+}
+h3,h4,h5{
+       color: rgb(115, 2, 123);
+       text-decoration: line-through ;
+       text-transform: uppercase;
+}
+a{
+       color: darkslateblue;
+       text-decoration: none;
+       font-weight: bolder;
+}

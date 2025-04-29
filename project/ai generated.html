@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashi | Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f0f0, #e3f2fd);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0d47a1;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      display: none;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0d47a1;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    ul.skills-list {
+      margin-top: 1rem;
+      list-style: square inside;
+    }
+
+    .project {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      color: #0d47a1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Yashi</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Welcome!</h2>
+      <p>Hi, I’m <strong>Yashi</strong> 👋 — a 16-year-old aspiring web developer, building the future one line of code
+        at a time.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’ve completed HTML and currently mastering CSS. I’m super passionate about creating beautiful, responsive
+        websites. My goal is to become a full-stack web developer and build things people love!</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (Basics)</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>This site you're looking at! Built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Coming Soon 🚧</h3>
+        <p>More cool projects on the way as I learn and grow. Stay tuned!</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:yashi@example.com">yashi@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yashidev" target="_blank">github.com/yashidev</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Yashi | Built with 💙</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+
+</html>

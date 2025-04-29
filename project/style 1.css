@@ -1,0 +1,80 @@
+/* box model */
+/* /* box model is a way to visualize the structure of an html element */
+/* /* it consists of 4 parts: */
+/* /* 1. content */
+/* /* 2. padding */
+/* /* 3. border */
+/* /* 4. margin */
+/* /*  */
+/* /* content is the actual content of the element */
+/* /* padding is the space between the content and the border */
+/* /* border is the line that surrounds the element */
+/* /* margin is the space between the element and the other elements */
+/* /*  */
+/* practice questions */
+/* 1st */
+body{ background-color: blue;}
+
+
+#container {
+  background-color: grey;
+  height: 500px;
+  width: 100px;}
+
+#header {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top:10px ;
+  margin-bottom:40px ;
+  
+}
+#content{background-color: yellow;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+font-size: 10px;
+margin-bottom: 40px
+}
+#footer {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 40px
+}
+/* 2nd */
+/* creating a navigation bar  */
+#nav{
+  background-color: #0f1111;
+  height: 60px;
+  width: 1200px;
+  border: solid white 5px;
+}
+
+#logo{
+  color: #f08804;
+
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px;
+}
+a{
+  color: #f08804;
+ text-decoration: none;
+  padding: 30px;
+  margin-right : 40px;
+
+}
+button{
+background-color: #f08804;
+border-radius: 40px;
+
+}
+/* display property */

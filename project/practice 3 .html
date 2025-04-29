@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>become a pro developer with me</title>
+  
+</head>
+<body>
+  <h1>using css now</h1>
+  <p>hello everyone i am yashi and now i am designing my old web page using css.<br>
+    this is just for practice purpose and i am not a pro developer.<br>
+    i am just a beginner and i am learning web development.<br>
+    i am not a pro developer and i am just a beginner.<br>
+  </p>
+  <button onclick="alert('hello everyone')">click me</button>
+  <br><br>
+  <a href="https://www.google.com/" target="_blank">click here to go to google</a>
+  <br><br>
+  <!-- lists -->
+   <!-- unordered list:<ul> it displays in bullet form -->
+    
+  <ul>
+    <li>apple</li>
+    <li>banana</li>
+    <li>orange</li>
+  </ul>
+  <!-- ordered list:<ol> it displays in number form -->
+  <ol>
+    <li>apple</li>
+    <li>banana</li>
+    <li>orange</li>
+  </ol>
+  <!-- description list:<dl> it displays in a definition form -->
+  <dl>
+    <dt>apple</dt>
+    <dd>a red fruit</dd>
+    <dt>banana</dt>
+    <dd>a yellow fruit</dd>
+    <dt>orange</dt>
+    <dd>an orange fruit</dd>
+  </dl>
+  <!-- table -->
+   <!-- <tr> used to display table row
+        <td> used to display table data
+        <th> table header -->
+          <!-- <thead> to wrap table head 
+               <tbody> to wrap table body-->
+                <!-- use colspan for width and rows span for row size -->
+  <table border="3" cellpadding="10" cellspacing="0">
+  <caption><b>Student Information</b></caption>
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>age</th> 
+                <th>class</th>
+                <th>marks</th>
+                <th>school</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>yashi</td>
+                <td>15</td>
+                <td>11</td>
+                <td>null</td>
+                <td>Chrysalis</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">this is a footer</td>
+              </tr>
+            </tfoot>
+          </table> <br>
+
+          <iframe src="https://www.bing.com/ck/a?!&&p=3f136dd5b579be17e2c42be6530f6a76b71cffd51aaf4f566f58b945414eb6e2JmltdHM9MTc0NDMyOTYwMA&ptn=3&ver=2&hsh=4&fclid=390d4bc6-7363-6c5e-3421-5fb672036d48&psq=wikipedia&u=a1aHR0cHM6Ly93d3cud2lraXBlZGlhLm9yZy8&ntb=1" width="500" height="1000" frameborder="0" allowfullscreen></iframe>
+          <br><br>
+          <!-- use iframe tag mostly -->
+          <!-- <video src = "https://youtu.be/_dz2DpR_x9k" width = "500" height = "500" controls autoplay  >my video</video> -->
+          
+          <!-- forms are used to collect data from the user:<form> -->
+          <!-- <input> is used to take input from the user -->
+           <!-- action attribute is used to define the action that needs to be performed by the user -->
+
+            <!-- method attribute is used to define the method that needs to be used to perform the action -->
+
+             <!-- <lable> -->
+              <h3>registration form</h3> 
+          <form action="https://www.google.com/" method="get">
+            <input type="text"  placeholder="Enter your name" name = "name" required><br><br>
+            <input type="email" placeholder="Enter your email" name = "email" required><br><br>
+            <input type="password" placeholder="Enter your password" name = "password" required><br><br>
+            <input type="number" placeholder="Enter your age" name = "age" required><br><br>
+            <input type="date" placeholder="Enter your date of birth" name = "dob" required><br>
+            <!-- radio = mcq -->
+             <h4>select your class</h4>
+             <label for="101">
+            <input type ="radio" name = "class" value = "11th" required id="101">11th
+            </label>
+            <br>
+            <label for="102">
+            <input type ="radio" name = "class" value = "12th" required id="102">12th
+            <br><br>
+            <!-- checkbox = multiple choice -->
+            <h4>select your subject</h4>
+            <label for="103">
+            <input type ="checkbox" name = "subject" value = "math" required id="103">MATH
+            <br>
+            <label for="104">
+            <input type ="checkbox" name = "subject" value = "english" required id="104">ENGLISH
+            <br>
+            <label for="105">
+            <input type ="checkbox" name = "subject" value = "science" required id="105">SCIENCE
+            <br><br>
+            <select name="country" id="country">
+              <option value="india">India</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="canada">Canada</option>
+              <option value="australia">Australia</option>
+            </select>
+            <br><br>
+            <textarea name = "feedback" id = "100" placeholder="please give your valuable feedback here" rows = 8>feedback </textarea><br><br>
+            
+
+            
+      <input type="submit" value="submit">
+            <input type="reset" value="reset">
+          </form>
+
+
+
+</body>
+</html>
